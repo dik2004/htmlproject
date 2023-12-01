@@ -1,0 +1,193 @@
+/* Add your CSS styles here */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0; /* Remove default margin */
+}
+
+nav {
+    background-color: #0b0b0b;
+    padding: 10px;
+    text-align: right;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* z-index: 800; */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 50px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s; /* Smooth color transition over 0.3 seconds */
+}
+
+nav a:hover {
+    color: #3498db; /* Change color to blue on hover */
+}
+
+.background-image {
+    /* Background Image without Transparency and Dark Overlay */
+    background-image: url('pexels-wendy-wei-1387174.jpg'); /* Add your background image path */
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    top: 50px; /* Adjust the top position to match the height of your navigation bar */
+    left: 0;
+    width: 100%;
+    height: calc(100% - 50px); /* Adjust height to cover the remaining space below the navigation bar */
+    z-index: -1; /* Place the background behind other elements */
+    filter: brightness(50%); /* Dark overlay */
+}
+
+main {
+    max-width: 70%;
+    margin: 90px auto;
+    text-align: center;
+    color: #fff; /* Text color for better visibility on the background */
+}
+
+header {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding-left: 20px; /* Add padding to the left for better visibility */
+    color: #fff;
+}
+
+h1 {
+    font-size: 5em; /* Increased font size */
+    margin-top: 0;
+    padding-top: 8%;
+    font-family: 'Netflix Sans', sans-serif; /* Using Netflix Sans font */
+    font-weight: 500; /* Adjust font weight as needed */
+    text-align: center;
+}
+
+h2 {
+    font-size: 2em; /* Subheading font size */
+    margin-bottom: 10px; /* Margin between main heading and subheading */
+    color: #fff; 
+    font-family: 'Netflix Sans', sans-serif; /* Using Netflix Sans font */
+    font-weight: 500; /* Adjust font weight as needed */
+}
+
+.notify-button {
+    background-color: #3498db; /* Button background color */
+    color: #fff; /* Button text color */
+    padding: 10px 20px; /* Button padding */
+    font-size: 1em; /* Button font size */
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+}
+
+.notify-button:hover {
+    background-color: #2980b9; /* Darker background color on hover */
+}
+
+.dropdown {
+    display: inline-block;
+    margin-right: 12%;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-content a {
+    color: #fff;
+    padding: 12px 16px;
+    display: block;
+    text-decoration: none;
+}
+
+.dropdown-content a:hover {
+    background-color: #4eabe8; /* Darker background color on hover */
+    color: #fff; /* Change text color to white on hover */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.key-features {
+    background-color: #fff; /* White background */
+    padding: 20px; /* Adjust padding as needed */
+    text-align: center;
+    box-sizing: border-box; /* Include padding in the width calculation */
+    width: 100%; /* Set width to 100% */
+    margin: 20px 0; 
+    
+    
+}
+
+.key-features h2 {
+    color: #333; /* Text color for the heading */
+}
+
+.key-features p {
+    color: #555; /* Text color for the subheading */
+}
+
+
+.FEATURE{
+    background-color: #ffffff; /* Background color for the feature details section */
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box; /* Include padding in the width calculation */
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.column {
+    flex: 0 0 48%; /* Adjust column width as needed */
+    margin: 10px;
+}
+
+h3 {
+    font-size: 1.5em;
+    color: #0b0b0b;
+}
+
+.column p {
+    margin-bottom: 15px; /* Add space between the paragraph and the button */
+    color: #0b0b0b;
+}
+
+.column img {
+    max-width: 100%; /* Ensure the image doesn't exceed the column width */
+    height: auto; /* Maintain the aspect ratio of the image */
+}
+
+.read-more-button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1em;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+}
+
+.read-more-button:hover {
+    background-color: #2980b9;
+}
